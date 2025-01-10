@@ -1,42 +1,24 @@
-# Comprehensive Diabetes Simulation Model - Backend
+# Comprehensive Diabetes Model
 
-This repository contains the python code for the comprehensive diabetes simulation model. This repository is maintained by RTI staff including Rainer Hilscher, Alex Harding, Andy Kawabata and Manuel Alvarado.
+This microsimulation project aims to study the effects of various interventions on diabetes prevalence.
 
-## Running
-This repository is intended to be run as part of a larger system - whether that be the internal orchestration using `docker-compose` for local development at RTI, or the ECPAAS infrastructure at CDC. See `Dockerfile.dev` for the intended containerization of this repository, which depends on a few other containers (notably redis and postgresql).
+**PI:** Tom Hoerger, RTI
+**Code:** Rainer Hilscher, RTI
 
-This repository builds as a single image, but has dual purpose:
+## Requirements
+- Python 3.9+ (3.9 - 3.12 have been successfully tested)
+- See requirements.txt for Python packages that need to be installed
+- The analysis script in particular makes use of Pandas
 
-* To run this image as a webserver using tornado to operationalize the model run the following command:
-```bash
-. ./runner.sh
-```
+## Usage
+- Use `python run-model.py [scenario name]` to execute the model
+- Scenario files need to be placed in the ./scenarios folder
+- Custom built scenario files need to contain the exact same variables as the ones listed in the same scenario files
 
-* To run this image as a worker container intended to run tasks off of the redis queue, run the following command:
-```bash
-celery -A src.orchestration.asynchronous_orchestrator worker -l info -n default@%h
-```
+### to run the 't1d-final-glyco_basic.json' scenario
+- Example: python run-model.py t1d-final-glyco_basic
 
-Note that in a fully deployed application, both of these services are expected to run.
+### to only run a specific stage
+- Example: python run-model.py t1d-final-glyco_basic --stages=analysis
+- Possible stages: {population, simulation, analysis}
 
-## Elevating user privileges
-To access the admin panel, users need to be elevated to superuser status. If no user has access to the admin panel, you can elevate a user to superuser status by doing the following:
-
-0) Obtain the username of the user you want to elevate to superuser status
-1) Open a shell in the backend container called `comprehensive_model_tornado`
-2) Navigate to app root with `cd src/webserver/`
-3) Run the following command to open the Django shell:
-
-   ```bash
-   python manage.py shell
-   ```
-4) In the Django shell, use the following Python commands to update the user's superuser status. Be sure to replace `'username'` with actual username:
-
-   ```python
-   from django.contrib.auth.models import User
-   user = User.objects.get(username='username')
-   user.is_superuser = True
-   user.is_staff = True
-   user.save()
-   ```  
-5) Exit the Django shell with `exit()`
