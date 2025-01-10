@@ -1,0 +1,440 @@
+{
+  "diabetes_type": "t1d",
+  "save_items_on_run": [
+    {
+      "save_population": [],
+      "save_config": []
+    }
+  ],
+  "population_dataset_uuid": "none",
+  "population_composition": [
+    {
+      "SEARCH": 0.52,
+      "EXCHANGE": 0.48
+    }
+  ],
+  "SEARCH_demographics": [
+    {
+      "mean_sd_demographics": {
+        "age_at_entry_mean": 10.71,
+        "age_at_entry_sd": 4.45,
+        "diabetes_duration_entry_mean": 0.84,
+        "diabetes_duration_entry_sd": 0.58
+      },
+      "race_proportions": {
+        "proportion_white": 0.716,
+        "proportion_black": 0,
+        "proportion_hispanic": 0,
+        "proportion_other": 0.284
+      },
+      "education_proportions": {
+        "proportion_postsecondary_education": 0,
+        "proportion_secondary_education": 0.015,
+        "proportion_less_than_secondary_education": 0.985
+      },
+      "other_proportions": {
+        "proportion_married": 0,
+        "proportion_female": 0.471,
+        "proportion_smoker": 0.03
+      }
+    }
+  ],
+  "SEARCH_risk_factors": [
+    {
+      "HBA1C mean": 7.79,
+      "HBA1C sd": 1.56,
+      "BMI mean": 19.95,
+      "BMI sd": 5.17,
+      "DBP mean": 62.8,
+      "DBP sd": 9.7,
+      "SBP mean": 99.6,
+      "SBP sd": 12,
+      "Total cholesterol mean": 161,
+      "Total cholesterol sd": 28,
+      "HDL mean": 55,
+      "HDL sd": 12,
+      "LDL mean": 92,
+      "LDL sd": 23,
+      "Triglycerides mean": 4.1,
+      "Triglycerides sd": 0.43,
+      "Heart rate mean": 84,
+      "Heart rate sd": 4,
+      "Insulin dose mean": 0.64,
+      "Insulin dose sd": 0.28
+    }
+  ],
+  "SEARCH_clinical_history": [
+    {
+      "proportion_microalbuminuria": 0.063,
+      "proportion_macroalbuminuria": 0.006,
+      "proportion_gfr": 0.088,
+      "proportion_esrd": 0.020727,
+      "proportion_npdr": 0,
+      "proportion_pdr": 0,
+      "proportion_csme": 0,
+      "proportion_cvd": 0,
+      "proportion_dpn": 0,
+      "proportion_foot_ulcer": 0,
+      "proportion_amputation": 0,
+      "proportion_hypoglycemia": 0.006,
+      "proportion_dka": 0.055724,
+      "proportion_hypertension": 0.003,
+      "proportion_blindness": 0,
+      "proportion_dcct_intervention": 1
+    }
+  ],
+  "EXCHANGE_demographics": [
+    {
+      "mean_sd_demographics": {
+        "age_at_entry_mean": 54.01,
+        "age_at_entry_sd": 13.74,
+        "diabetes_duration_entry_mean": 21.09,
+        "diabetes_duration_entry_sd": 12.53
+      },
+      "race_proportions": {
+        "proportion_white": 0.898,
+        "proportion_black": 0,
+        "proportion_hispanic": 0,
+        "proportion_other": 0.102
+      },
+      "education_proportions": {
+        "proportion_postsecondary_education": 0.58,
+        "proportion_secondary_education": 0.28,
+        "proportion_less_than_secondary_education": 0.14
+      },
+      "other_proportions": {
+        "proportion_married": 0.713,
+        "proportion_female": 0.508,
+        "proportion_smoker": 0.067
+      }
+    }
+  ],
+  "EXCHANGE_risk_factors": [
+    {
+      "HBA1C mean": 7.75,
+      "HBA1C sd": 1.28,
+      "BMI mean": 27.62,
+      "BMI sd": 5.39,
+      "DBP mean": 72.5,
+      "DBP sd": 9.4,
+      "SBP mean": 124.7,
+      "SBP sd": 15.4,
+      "Total cholesterol mean": 174,
+      "Total cholesterol sd": 31,
+      "HDL mean": 65,
+      "HDL sd": 17,
+      "LDL mean": 89,
+      "LDL sd": 25,
+      "Triglycerides mean": 4.46,
+      "Triglycerides sd": 0.44,
+      "Heart rate mean": 75,
+      "Heart rate sd": 8,
+      "Insulin dose mean": 0.59,
+      "Insulin dose sd": 0.22
+    }
+  ],
+  "EXCHANGE_clinical_history": [
+    {
+      "proportion_microalbuminuria": 0.095,
+      "proportion_macroalbuminuria": 0.019,
+      "proportion_gfr": 0.088,
+      "proportion_esrd": 0.021,
+      "proportion_npdr": 0,
+      "proportion_pdr": 0,
+      "proportion_csme": 0,
+      "proportion_cvd": 0,
+      "proportion_dpn": 0,
+      "proportion_foot_ulcer": 0,
+      "proportion_amputation": 0,
+      "proportion_hypoglycemia": 0.129,
+      "proportion_dka": 0.033,
+      "proportion_hypertension": 0.137,
+      "proportion_blindness": 0,
+      "proportion_dcct_intervention": 1
+    }
+  ],
+  "disutilities_t1d": [
+    {
+      "Baseline QALY": 0.836,
+      "Age": -0.009,
+      "Female": -0.028,
+      "Baseline duration": -0.001,
+      "Microalbuminuria, first year mean": -0.01,
+      "Microalbuminuria, first year se": 0.005,
+      "Microalbuminuria, following year mean": -0.01,
+      "Microalbuminuria, following year se": 0.005,
+      "Macroalbuminuria, first year mean": -0.021,
+      "Macroalbuminuria, first year se": 0.008,
+      "Macroalbuminuria, following year mean": -0.021,
+      "Macroalbuminuria, following year se": 0.008,
+      "Impaired GFR, first year mean": -0.034,
+      "Impaired GFR, first year se": 0.01,
+      "Impaired GFR, following year mean": -0.034,
+      "Impaired GFR, following year se": 0.01,
+      "ESRD, first year mean": 0,
+      "ESRD, first year se": 0,
+      "ESRD, following year mean": 0,
+      "ESRD, following year se": 0,
+      "NPDR, first year mean": -0.003,
+      "NPDR, first year se": 0.005,
+      "NPDR, following year mean": -0.003,
+      "NPDR, following year se": 0.005,
+      "PDR, first year mean": -0.013,
+      "PDR, first year se": 0.007,
+      "PDR, following year mean": -0.013,
+      "PDR, following year se": 0.007,
+      "CSME, first year mean": -0.002,
+      "CSME, first year se": 0.005,
+      "CSME, following year mean": -0.002,
+      "CSME, following year se": 0.005,
+      "CVD MACE, first year mean": -0.066,
+      "CVD MACE, first year se": 0.018,
+      "CVD MACE, following year mean": -0.066,
+      "CVD MACE, following year se": 0.018,
+      "CVD non-MACE, first year mean": -0.007,
+      "CVD non-MACE, first year se": 0.011,
+      "CVD non-MACE, following year mean": -0.007,
+      "CVD non-MACE, following year se": 0.011,
+      "DPN, first year mean": -0.056,
+      "DPN, first year se": 0.009,
+      "DPN, following year mean": -0.056,
+      "DPN, following year se": 0.009,
+      "Ulcer, first year mean": -0.066,
+      "Ulcer, first year se": 0.015,
+      "Amputation, first year mean": -0.116,
+      "Amputation, first year se": 0.023,
+      "Amputation, following year mean": -0.116,
+      "Amputation, following year se": 0.023,
+      "Hypoglycemia, first year mean": -0.009,
+      "Hypoglycemia, first year se": 0.003,
+      "DKA, first year mean": -0.035,
+      "DKA, first year se": 0.01
+    }
+  ],
+  "intervention_types_t1d": [
+    {
+      "intervention_set_name_t1d": "initial default",
+      "type_generic_t1d": [],
+      "type_glycemic_t1d": [
+        "glycemic"
+      ],
+      "type_cholesterol_t1d": [],
+      "type_bp_t1d": [],
+      "type_smoke_t1d": [],
+      "type_lifestyle_t1d": [],
+      "type_surgery_t1d": []
+    }
+  ],
+  "baseline_economic_factors_t1d": [
+    {
+      "Cost discount factor": 0.03,
+      "QALY discount factor": 0.03
+    }
+  ],
+  "costs_t1d": [
+    {
+      "Base cost": 7131,
+      "Base cost se": 978,
+      "TV age cost": 13,
+      "TV age cost se": 29,
+      "Macroalbuminuria, first year cost": 9119,
+      "Macroalbuminuria, first year se": 1161,
+      "Macroalbuminuria, following year cost": 3865,
+      "Macroalbuminuria, following year se": 1001,
+      "GFR, first year cost": 9119,
+      "GFR, first year se": 1161,
+      "GFR, following year cost": 3865,
+      "GFR, following year se": 1001,
+      "ESRD, first year cost": 73534,
+      "ESRD, first year se": 8269,
+      "ESRD, following year cost": 97431,
+      "ESRD, following year se": 11596,
+      "PDR, first year cost": 2023,
+      "PDR, first year se": 539,
+      "PDR, following year cost": 2250,
+      "PDR, following year se": 755,
+      "CSME, first year cost": 5357,
+      "CSME, first year se": 1232,
+      "DPN, first year cost": 3646,
+      "DPN, first year se": 390,
+      "DPN, following year cost": 2200,
+      "DPN, following year se": 498,
+      "Ulcer, first year cost": 4418,
+      "Ulcer, first year se": 1904,
+      "Ulcer, following year cost": 2520,
+      "Ulcer, following year se": 1955,
+      "Amputation, first year cost": 10264,
+      "Amputation, first year se": 7126,
+      "Amputation, following year cost": 0,
+      "Amputation, following year se": 0,
+      "CVD MACE, first year cost": 38773,
+      "CVD MACE, first year se": 4354,
+      "CVD MACE, following year cost": 9225,
+      "CVD MACE, following year se": 4130,
+      "CVD non-MACE, first year cost": 16546,
+      "CVD non-MACE, first year se": 2882,
+      "CVD non-MACE, following year cost": 1185,
+      "CVD non-MACE, following year se": 1121,
+      "Hypoglycemia, first year cost": 5497,
+      "Hypoglycemia, first year se": 448,
+      "DKA, first year cost": 10624,
+      "DKA, first year se": 577,
+      "Blindness, first year cost": 0,
+      "Blindness, first year se": 0,
+      "Blindness, following year cost": 0,
+      "Blindness, following year se": 0,
+      "Incremental cost in year of death cost": 0,
+      "Incremental cost in year of death se": 0
+    }
+  ],
+  "costs_medicare_t1d": [
+    {
+      "Base cost": 10584.4,
+      "Base cost se": 30.9,
+      "TV age cost": 0,
+      "TV age cost se": 0,
+      "Macroalbuminuria, first year cost": 10263.6,
+      "Macroalbuminuria, first year se": 148.3,
+      "Macroalbuminuria, following year cost": 2321,
+      "Macroalbuminuria, following year se": 142.9,
+      "GFR, first year cost": 10263.6,
+      "GFR, first year se": 148.3,
+      "GFR, following year cost": 2321,
+      "GFR, following year se": 142.9,
+      "ESRD, first year cost": 56469.2,
+      "ESRD, first year se": 504.3,
+      "ESRD, following year cost": 41429.3,
+      "ESRD, following year se": 543.1,
+      "PDR, first year cost": 871.8,
+      "PDR, first year se": 279,
+      "PDR, following year cost": 39.8,
+      "PDR, following year se": 233.1,
+      "CSME, first year cost": 1404.5,
+      "CSME, first year se": 234.7,
+      "DPN, first year cost": 4434.2,
+      "DPN, first year se": 182.8,
+      "DPN, following year cost": 1168.3,
+      "DPN, following year se": 161.2,
+      "Ulcer, first year cost": 10639.3,
+      "Ulcer, first year se": 198,
+      "Ulcer, following year cost": 3090.4,
+      "Ulcer, following year se": 183.9,
+      "Amputation, first year cost": 40697.7,
+      "Amputation, first year se": 776.5,
+      "Amputation, following year cost": 7379.8,
+      "Amputation, following year se": 932,
+      "CVD MACE, first year cost": 16343.2,
+      "CVD MACE, first year se": 186.6,
+      "CVD MACE, following year cost": 1146.9,
+      "CVD MACE, following year se": 193.4,
+      "CVD non-MACE, first year cost": 6790.3,
+      "CVD non-MACE, first year se": 152.1,
+      "CVD non-MACE, following year cost": 257.6,
+      "CVD non-MACE, following year se": 44.9,
+      "Hypoglycemia, first year cost": 6400.2,
+      "Hypoglycemia, first year se": 155.3,
+      "DKA, first year cost": 11204.4,
+      "DKA, first year se": 717.2,
+      "Blindness, first year cost": 6770.7,
+      "Blindness, first year se": 302.2,
+      "Blindness, following year cost": 739.7,
+      "Blindness, following year se": 271.3,
+      "Incremental cost in year of death cost": 0,
+      "Incremental cost in year of death se": 0
+    }
+  ],
+  "mortality_multipliers_t1d": [
+    {
+      "Equation 1": 1,
+      "Equation 2": 1,
+      "Equation 3": 1
+    }
+  ],
+  "complication_multipliers_t1d": [
+    {
+      "npdr multiplier": 1,
+      "esrd multiplier": 1,
+      "dpn multiplier": 1,
+      "microalbuminuria multiplier": 1,
+      "pdr multiplier": 1,
+      "hypoglycemia multiplier": 1,
+      "macroalbuminuria multiplier": 1,
+      "amputation multiplier": 1,
+      "cvd_non_mace multiplier": 1,
+      "ulcer multiplier": 1,
+      "cvd_mace multiplier": 1,
+      "gfr multiplier": 1,
+      "dka multiplier": 1,
+      "csme multiplier": 1,
+      "blindness multiplier": 1
+    }
+  ],
+  "scenario_name_t1d": "Example scenario",
+  "simulation_type_t1d": "PSA",
+  "psa_intervention_costs_t1d": "10",
+  "psa_factor_change_t1d": "10",
+  "psa_risk_reduction_t1d": "10",
+  "psa_complication_variability_t1d": true,
+  "psa_mortality_variability_t1d": false,
+  "iterations_t1d": 10,
+  "seed_t1d": 1234,
+  "size_t1d": 10000,
+  "time_horizon_t1d": "fixed",
+  "max_steps_t1d": 15,
+  "glycemic_control_intensification_advanced_t1d": [
+    {
+      "Effect of intensifying on A1c Standard": -1,
+      "Effect of intensifying on A1c Intervention": -1.5,
+      "Effect of next intensification on A1c Standard": -1,
+      "Effect of next intensification on A1c Intervention": -1,
+      "Effect of subsequent intensification on A1c Standard": -1,
+      "Effect of subsequent intensification on A1c Intervention": -1
+    }
+  ],
+  "glycemic_control_trajectory_advanced_t1d": [
+    {
+      "custom_a1c_trajectory": false,
+      "Annual A1c Before Standard": 0.2,
+      "Annual A1c Before Intervention": 0.2,
+      "Annual A1c After Standard": 0.2,
+      "Annual A1c After Intervention": 0.1,
+      "Annual A1c Subsequent Standard": 0.2,
+      "Annual A1c Subsequent Intervention": 0.1
+    }
+  ],
+  "glycemic_control_targets_advanced_t1d": [
+    {
+      "General Standard": 7,
+      "General Intervention": 7,
+      "If age < 18 Standard": 7.5,
+      "If age < 18 Intervention": 7,
+      "If age >= 65 Standard": 7.5,
+      "If age >= 65 Intervention": 7,
+      "If CVD = 1 or ESRD = 1 Standard": 8,
+      "If CVD = 1 or ESRD = 1 Intervention": 7.5,
+      "If age >= 65 and (CVD = 1 or ESRD = 1) Standard": 8.5,
+      "If age >= 65 and (CVD = 1 or ESRD = 1) Intervention": 8,
+      "Intensify if A1c > target Standard": 0,
+      "Intensify if A1c > target Intervention": 0
+    }
+  ],
+  "glycemic_control_costs_advanced_t1d": [
+    {
+      "Current treatment Standard": 478,
+      "Current treatment Intervention": 758,
+      "First intensification Standard": 758,
+      "First intensification Intervention": 1975,
+      "Next intensification Standard": 1975,
+      "Next intensification Intervention": 1975,
+      "Subsequent intensification Standard": 1975,
+      "Subsequent intensification Intervention": 1975
+    }
+  ],
+  "glycemic_control_noncompliers_t1d": [
+    {
+      "glycemic_non_compliant_t1d": 0
+    }
+  ],
+  "glycemic_control_setup_type_t1d": "advanced",
+  "include_medicare_t1d": false
+}
